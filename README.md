@@ -2,27 +2,30 @@
 
 ## How to run
 
-1. Use hisazumi/aprisrc-sitl docker image
-
-* https://hub.docker.com/repository/docker/hisazumi/aprisrc-sitl
-* https://github.com/hisazumi/aprisrc-sitl
-
-2. Download this project in catkin_ws/src in the conatiner
+1. Download this project in catkin_ws/src in the conatiner
 ```
 cd ~/catkin_ws/src
-git clone https://github.com/hisazumi/gnc.git
+git clone https://github.com/takata6080/gnc-kyudai-team2.git
 ```
 
-3. Import to your bridgepoint workspace
+2. Import to your bridgepoint workspace
 
 * launch bridgepoint (just type 'bridgepoint' on termianl in the container)
 * File menu -> Import -> General/Existing Project into Workspace -> Select root directory
 * and select imported directory (it should be ~/catkin_ws/src/gnc)
 * Build on BridgePoint (Ctrl+B or Project menu -> Build all)
 
-4. Run in terminal
+3. Run in terminal
 
 * Before executing gnc, run simulator.sh, sitl.sh, and apm accroding to README.md of the container.
 ```
-rosrun gnc ctrl
+cd gazebo_models_worlds_collection/pbl/
+```
+
+```
+$ roscore
+$ ./simulator_pbl.sh
+$ ~/Desktop/sitl.sh
+$ roslaunch iq_sim apm.launch
+$ rosrun gnc ctrl
 ```

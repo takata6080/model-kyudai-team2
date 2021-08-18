@@ -5,7 +5,7 @@
 1. Download this project in catkin_ws/src in the conatiner
 ```
 cd ~/catkin_ws/src
-git clone https://github.com/takata6080/gnc-kyudai-team2.git
+git clone https://github.com/takata6080/model-kyudai-team2.git
 ```
 
 2. Import to your bridgepoint workspace

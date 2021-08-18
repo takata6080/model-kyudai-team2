@@ -1,0 +1,178 @@
+-- BP 7.1.6 content: Interface syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO C_I
+	VALUES ("78776ad7-dffd-4126-8217-a913ac6e4bc8",
+	"00000000-0000-0000-0000-000000000000",
+	'mavcontrol',
+	'');
+INSERT INTO C_EP
+	VALUES ("b00324c5-e272-4a60-96b2-1a40dbbdea3e",
+	"78776ad7-dffd-4126-8217-a913ac6e4bc8",
+	-1,
+	'init',
+	'');
+INSERT INTO C_IO
+	VALUES ("b00324c5-e272-4a60-96b2-1a40dbbdea3e",
+	"ba5eda7a-def5-0000-0000-000000000000",
+	'init',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_EP
+	VALUES ("7642e709-1eb0-4ab6-86f5-a945e4e95c17",
+	"78776ad7-dffd-4126-8217-a913ac6e4bc8",
+	-1,
+	'takeoff',
+	'');
+INSERT INTO C_IO
+	VALUES ("7642e709-1eb0-4ab6-86f5-a945e4e95c17",
+	"ba5eda7a-def5-0000-0000-000000000000",
+	'takeoff',
+	'',
+	0,
+	'',
+	"b00324c5-e272-4a60-96b2-1a40dbbdea3e");
+INSERT INTO C_PP
+	VALUES ("82188d43-e348-4d1f-89d7-47f817a84ae6",
+	"7642e709-1eb0-4ab6-86f5-a945e4e95c17",
+	"ba5eda7a-def5-0000-0000-000000000003",
+	'alt',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_EP
+	VALUES ("37d0542f-1ab7-4216-b4a8-2c23dffc0456",
+	"78776ad7-dffd-4126-8217-a913ac6e4bc8",
+	-1,
+	'land',
+	'');
+INSERT INTO C_IO
+	VALUES ("37d0542f-1ab7-4216-b4a8-2c23dffc0456",
+	"ba5eda7a-def5-0000-0000-000000000000",
+	'land',
+	'',
+	0,
+	'',
+	"7642e709-1eb0-4ab6-86f5-a945e4e95c17");
+INSERT INTO C_EP
+	VALUES ("c53d4966-9097-4e62-8e45-bb3b7522378a",
+	"78776ad7-dffd-4126-8217-a913ac6e4bc8",
+	-1,
+	'arm',
+	'');
+INSERT INTO C_IO
+	VALUES ("c53d4966-9097-4e62-8e45-bb3b7522378a",
+	"ba5eda7a-def5-0000-0000-000000000000",
+	'arm',
+	'',
+	0,
+	'',
+	"37d0542f-1ab7-4216-b4a8-2c23dffc0456");
+INSERT INTO C_EP
+	VALUES ("248f2941-48bf-4a2e-99ad-74a5d3b2f279",
+	"78776ad7-dffd-4126-8217-a913ac6e4bc8",
+	-1,
+	'set_destination',
+	'');
+INSERT INTO C_IO
+	VALUES ("248f2941-48bf-4a2e-99ad-74a5d3b2f279",
+	"ba5eda7a-def5-0000-0000-000000000000",
+	'set_destination',
+	'',
+	0,
+	'',
+	"c53d4966-9097-4e62-8e45-bb3b7522378a");
+INSERT INTO C_PP
+	VALUES ("7f707e01-0f0a-48c7-afd8-8245ae5ea78d",
+	"248f2941-48bf-4a2e-99ad-74a5d3b2f279",
+	"ba5eda7a-def5-0000-0000-000000000003",
+	'x',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PP
+	VALUES ("a91a89dc-0d33-4ff1-9a4a-2367638a7031",
+	"248f2941-48bf-4a2e-99ad-74a5d3b2f279",
+	"ba5eda7a-def5-0000-0000-000000000003",
+	'y',
+	'',
+	0,
+	'',
+	"7f707e01-0f0a-48c7-afd8-8245ae5ea78d");
+INSERT INTO C_PP
+	VALUES ("a760ebd0-ab62-475c-b0ee-4c8528096f1d",
+	"248f2941-48bf-4a2e-99ad-74a5d3b2f279",
+	"ba5eda7a-def5-0000-0000-000000000003",
+	'z',
+	'',
+	0,
+	'',
+	"a91a89dc-0d33-4ff1-9a4a-2367638a7031");
+INSERT INTO C_EP
+	VALUES ("c4c94ad5-cb8c-4b6d-94fd-23aafcb1bc52",
+	"78776ad7-dffd-4126-8217-a913ac6e4bc8",
+	-1,
+	'set_heading',
+	'');
+INSERT INTO C_IO
+	VALUES ("c4c94ad5-cb8c-4b6d-94fd-23aafcb1bc52",
+	"ba5eda7a-def5-0000-0000-000000000000",
+	'set_heading',
+	'',
+	0,
+	'',
+	"248f2941-48bf-4a2e-99ad-74a5d3b2f279");
+INSERT INTO C_PP
+	VALUES ("d4a22d73-9f5f-4533-8c78-eab99944cb1f",
+	"c4c94ad5-cb8c-4b6d-94fd-23aafcb1bc52",
+	"ba5eda7a-def5-0000-0000-000000000003",
+	'heading',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_EP
+	VALUES ("7576d5e0-2683-4a42-967a-ddb25a458620",
+	"78776ad7-dffd-4126-8217-a913ac6e4bc8",
+	-1,
+	'get_heading',
+	'');
+INSERT INTO C_IO
+	VALUES ("7576d5e0-2683-4a42-967a-ddb25a458620",
+	"ba5eda7a-def5-0000-0000-000000000003",
+	'get_heading',
+	'',
+	0,
+	'',
+	"c4c94ad5-cb8c-4b6d-94fd-23aafcb1bc52");
+INSERT INTO C_EP
+	VALUES ("e2e61698-b9dc-4911-95c7-79872095f0dd",
+	"78776ad7-dffd-4126-8217-a913ac6e4bc8",
+	-1,
+	'ready',
+	'');
+INSERT INTO C_IO
+	VALUES ("e2e61698-b9dc-4911-95c7-79872095f0dd",
+	"ba5eda7a-def5-0000-0000-000000000000",
+	'ready',
+	'',
+	1,
+	'',
+	"7576d5e0-2683-4a42-967a-ddb25a458620");
+INSERT INTO PE_PE
+	VALUES ("78776ad7-dffd-4126-8217-a913ac6e4bc8",
+	1,
+	"0924fcd2-185c-4c76-b1c2-5ce790f1ba0a",
+	"00000000-0000-0000-0000-000000000000",
+	6);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("0924fcd2-185c-4c76-b1c2-5ce790f1ba0a",
+	"d923df31-2d4f-4454-ba3a-3347665a758b",
+	"d923df31-2d4f-4454-ba3a-3347665a758b",
+	'Interfaces',
+	'',
+	0,
+	'../Interfaces.xtuml');

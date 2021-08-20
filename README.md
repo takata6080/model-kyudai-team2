@@ -35,7 +35,9 @@ catkin build
 
 - Enter the working directory
 ```
-cd gazebo_models_worlds_collection/pbl/
+cd gazebo_models_worlds_collection
+git pull
+cd pbl
 ```
 
 - Open five terminals with "file -> New Tab" and execute the following five commands in each

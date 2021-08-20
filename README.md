@@ -15,7 +15,7 @@ cd ~/catkin_ws/src
 git clone https://github.com/takata6080/model-kyudai-team2.git
 mv model-kyudai-team2/ gnc
 ```
-- If you have cloned this repository.
+- If you have cloned this repository, please pull and incorporate remote updates.
 ```
 cd ~/catkin_ws/src/gnc
 git pull

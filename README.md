@@ -46,10 +46,11 @@ git pull
 cd pbl
 ```
 
-- Open 5 terminals with "file -> New Tab" and execute the following 5 commands in each
+- Open 6 terminals with "file -> New Tab" and execute the following 6 commands in each
 ```
 $ roscore
 $ ./pbl_task.sh
+$ rosrun image_view image_view image:=/camera1/image_raw
 $ ~/Desktop/sitl.sh
 $ roslaunch iq_sim apm.launch
 $ rosrun gnc ctrl

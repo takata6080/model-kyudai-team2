@@ -3,15 +3,22 @@
 
 ## 0. If you have a gnc directory in catkin_ws/src and want to make a backup
 *It will be saved as a folder named gnc.bak in the Home directory.
+*If you have not cloned this repository, you can run it.
 ```
 mv ~/catkin_ws/src/gnc ~/gnc.bak
 ```
 
 ## 1. Download this project in catkin_ws/src in the conatiner
+- If you have not cloned this repository.
 ```
 cd ~/catkin_ws/src
 git clone https://github.com/takata6080/model-kyudai-team2.git
 mv model-kyudai-team2/ gnc
+```
+- If you have cloned this repository.
+```
+cd ~/catkin_ws/src/gnc
+git pull
 ```
 
 ## 2. Rebuild catkin.

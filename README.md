@@ -39,7 +39,7 @@ git pull
 cd pbl
 ```
 
-- Open five terminals with "file -> New Tab" and execute the following five commands in each
+- Open 5 terminals with "file -> New Tab" and execute the following 5 commands in each
 ```
 $ roscore
 $ ./pbl_task.sh

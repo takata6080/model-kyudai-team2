@@ -56,7 +56,7 @@ $ roslaunch iq_sim apm.launch
 $ rosrun gnc ctrl
 ```
 *With the drone camera open with the third command "rosrun image_view image_view image:=/camera1/image_raw"
-1. press right-click to save the image. 2.
+1. press right-click to save the image.
 2. enter the command "rosrun image_view video_recorder image:=/camera1/image_raw" in an another tab to create a video.
 The video will be recorded until you press "Ctrl+C".
 
